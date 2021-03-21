@@ -37,7 +37,7 @@ import pandas as pd
 import smtplib
 import email.message
 
-df_names = pd.read_excel('teste.xlsx')
+df_names = pd.read_excel('example.xlsx')
 
 for idx, row in df_names.iterrows():
 	corpo_email = create_message(row['Name'], row['Message'], row['Personal_info'])
